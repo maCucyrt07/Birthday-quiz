@@ -1,8 +1,8 @@
 """
 birthday.py
-Author: <your name here>
-Credit: <list sources used, if any>
-Assignment:
+Author: MaCucyrt07 
+Credit: Ella, Kyle
+Assignment: Birthday Quiz
 
 Your program will ask the user the following questions, in this order:
 
@@ -36,7 +36,7 @@ from calendar import month_name
 todaymonth = datetime.today().month
 todaydate = datetime.today().day
 month = month_name[todaymonth]
-input("Hello, what is your name? ")
+name = input("Hello, what is your name? ")
 print("Hi",name+", what was the name of the month you were born in?")
 b = birthmonth = input()
 print("And what year were you born in,",name+"?")
@@ -44,31 +44,30 @@ a = birthyear = float(input())
 print("And the day?")
 c = birthday = float(input())
 
-if b == 'October' and c == 31
-print ("You were born on Halloween!")
-if b == 'todaymonth' and c == 'todaydate'
-print ("Happy Birthday!")
+if b == 'October' and c == 31:
+    print ("You were born on Halloween!")
+elif b == month and c == todaydate:
+    print ("Happy Birthday!")
 
 
 
 else:
-    if a in ['March','April','May']:
-    season = 'spring'
-    elif a in ['December','January','February']:
-    season = 'winter'
-    elif a in ['June', 'July', 'August']:
-    season = 'summer'
-    elif a in ['September','October','November']:
-    season = 'fall'
-
-    if year 0=>a<=1979:
-    age = 'Stone Age'
-    elif 1980=>a<=1989:
-    age = 'Eighties'
-    elif 1990=>a<=1999:
-    age = 'Nineties'
-    elif 2000=>a<=2020
+    if b in ['March','April','May']:
+        season = 'spring'
+    elif b in ['December','January','February']:
+        season = 'winter'
+    elif b in ['June', 'July', 'August']:
+        season = 'summer'
+    elif b in ['September','October','November']:
+        season = 'fall'
     
-    print (name+', you are a 'season+' baby of the 'age+)
-   
-
+    if a<=1979:
+        age = 'Stone Age.'
+    elif a<=1989:
+        age = 'eighties.'
+    elif a<=1999:
+        age = 'nineties.'
+    elif a<=2020:
+        age = 'two thousands.'
+    
+    print (name+', you are a',season,'baby of the',age)
