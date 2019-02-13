@@ -47,7 +47,7 @@ c = birthday = float(input())
 if b == 'October' and c == 31:
     print ("You were born on Halloween!")
 elif b == month and c == todaydate:
-    print ("Happy Birthday!")
+    print ("Happy birthday!")
 
 
 
